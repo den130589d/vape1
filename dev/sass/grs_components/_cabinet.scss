@@ -1,0 +1,68 @@
+.cabinet{
+  position: relative;
+   img.img-cabinet{
+   width: 100%;
+     max-width: 250px;
+
+
+  }
+  img.img-close{
+    position: absolute;
+    right: 3%;
+  }
+  img.img-cabinet3{
+    width: 100%;
+    max-width: 250px;
+  }
+  div{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .cabinet-client{
+    position: relative;
+    &:before{
+      content: ' ';
+      position: absolute;
+      left: -13%;
+      height: 10%;
+      width: 25px;
+      height: 25px;
+      border-radius: 25px;
+      background: #E69A46;
+    }
+  }
+  ul li {
+    padding-left: 5px;
+    @media only screen and (max-width: 992px){
+      margin: 10px;
+
+    }
+  }
+
+  form{
+    input{
+      margin: 10px 0;
+      border: 1px solid black;
+      height: 32px;
+      padding: 0;
+      &:focus{
+        border: 1px solid black;
+        border-bottom: none;
+        box-shadow: none;
+
+      }
+
+    }
+
+
+  }
+  input.btn-save{
+    background: none;
+    border: 3px solid black;
+    width: 150px;
+    height: 50px;
+    &:focus{
+      border: 3px solid black;
+    }
+  }
+}

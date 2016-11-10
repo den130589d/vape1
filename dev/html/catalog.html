@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/grs.css" media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="urf-8">
+    <title></title>
+</head>
+<body>
+<!--#insert file="includes/-header2.html"-->
+<div class="section-one">
+    <div class="page-header valign-wrapper">
+        <ul class="row">
+            <li class="col l4 m12 push-l7">
+                <ul class="row">
+                    <li class="col s4 push-s8 pull-l6 header-second-section"><div class="nav-wrapper ">
+                        <form>
+                            <div class="input-field ">
+                                <input id="search" type="search" required class="search-header-input">
+                                <img src="../images/search-header.png" alt="" class="search-header">
+                            </div>
+                        </form>
+                    </li>
+                    <li class="col s4 pull-s3 push-l5 header-third-section">
+                        <a href=""><span class="border-r white-text total-price ">52.70 $</span></a>
+                        <a href=""><span class="white-text fs15">Кабинет</span></a>
+                        <a href=""><img src="../images/cart-header.png" alt=""></a>
+
+                    </li>
+                </ul>
+
+            </li>
+            <li class="col l6 m12 pull-l4">
+                <ul class="row">
+                    <li class="col s4 hide-on-large-only center-align"><i class="material-icons white-text">&#xE5D2;</i></li>
+                    <li class="col s2">
+                        <div class="border-r">
+                            <a href=""><span class="white-text">Девайсы</span></a><br>
+                            <a href=""><span class="white-text">Смеси</span></a><br>
+                            <a href=""><span class="white-text">Аксесуары</span></a><br>
+                        </div>
+                    </li>
+                    <li class="col s2 white-text">Фильтр</li>
+                    <li class="col s4 ">
+                        <div class="filtr-header-mobile">
+                        <div class="filter-items second-filter-item"></div>
+                        <div class="filter-items first-filter-item"></div>
+                        </div>
+
+                    </li>
+                    <li class="col s4 radio-form-catalog hide-on-med-and-down">
+                        <form action="#">
+                            <p>
+                                <input name="group1" type="radio" id="test1" />
+                                <label for="test1">Mechanical Modes</label>
+                            </p>
+                            <p>
+                                <input name="group1" type="radio" id="test2" />
+                                <label for="test2">Regulated modes</label>
+                            </p>
+                            <p>
+                                <input name="group1" type="radio" id="test3"  />
+                                <label for="test3">Starter kids</label>
+                            </p>
+                            </form>
+                    </li>
+
+                </ul>
+            </li>
+    </ul>
+</div>
+    <div class="page-main">
+        <div class="catalog-wrap">
+            <!--#insert file="includes/-catalog.html"-->
+        </div>
+        <div class="catalog-wrap">
+            <!--#insert file="includes/-catalog.html"-->
+        </div>
+
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/fullHeight.js"></script>
+
+<script>
+    // Initialize collapse button
+    $('.button-collapse').sideNav('show'
+    );
+
+    $('.side-nav, .section-one').fullHeight();
+
+    $('.catalog-item-first').on('click', function () {
+
+        $(this).next().toggleClass('active-catalog-item');
+
+    })
+
+
+</script>
+</body>
+</html>

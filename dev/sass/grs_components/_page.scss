@@ -1,0 +1,276 @@
+.section-one{
+
+  @media only screen and (min-width: 992px){
+    margin-left: 25%;
+    width: 75%;
+  }
+
+
+
+
+  .page-header{
+
+    padding-top: 38px;
+    min-width: 600px;
+    @media only screen and (min-width: 992px){
+      height: 100px;
+    }
+    @media only screen and (min-width: 992px){
+      min-width: 1000px;
+    }
+
+
+    background: -moz-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: -webkit-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: -o-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: -ms-linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+    background: linear-gradient(51deg, #654B2E 0%, #3F2B17 55%, #3C2815 59%, #201003 100%);
+  }
+  i{
+    font-size: 72px;
+    cursor: pointer;
+  }
+  ul{
+    width: 100%;
+
+  }
+  ul li{
+    display: inline-block;
+
+
+  }
+  img.search-header{
+    position: absolute;
+
+      top: 8%;
+      left: 165px;
+
+  }
+  input.search-header-input{
+    width: 180px;
+    border: none;
+    height:30px;
+    opacity: 0.5;
+    background: #fff;
+    border-radius: 10px;
+
+  }
+  .nav-header-mobile{
+    padding-top: 30px;
+    i{
+      font-size: 72px;
+      cursor: pointer;
+    }
+    div{
+
+
+      padding: 0 5px;
+      span{
+        color: #fff;
+      }
+    }
+  }
+  .page-main{
+
+
+    background: url(../images/background.png) repeat-y;
+    background-size: cover;
+
+    .content{
+      width: 90%;
+      min-width: 600px;
+      height: 90%;
+      min-height: 600px;
+      border: 3px solid #E5C595;
+      @media only screen and (min-width: 992px){
+      border: none;
+
+      }
+      @media only screen and (max-width: 992px){
+
+        padding: 0;
+      }
+
+
+      margin: 60px auto;
+      background: #fff;
+      padding: 50px;
+    }
+
+
+  }
+  .filtr-header-mobile{
+
+    position: relative;
+    width: 180px;
+    height: 8px;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 0.5;
+    margin: 25px auto;
+    cursor: pointer;
+    &:before{
+      content: 'Цена';
+      position: absolute;
+      top: -300%;
+      left: -2%;
+      color: #fff;
+
+
+    }
+    .filter-items{
+      position: absolute;
+      top: -3px;
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      background: #fff;
+      opacity: 1.0;
+      box-shadow: 10px 10px 10px rgb(0,0,0);
+
+
+
+
+    }
+    .second-filter-item{
+      left: 10%;
+      &:before{
+        content: '115 uah';
+        position: absolute;
+        top: 85%;
+        left: -250%;
+        color: #fff;
+        white-space: nowrap;
+
+      }
+    }
+    .first-filter-item{
+      left: 50%;
+      &:before{
+        content: '155 uah';
+        position: absolute;
+        top: 85%;
+        left: -250%;
+        color: #fff;
+        white-space: nowrap;
+
+      }
+    }
+  }
+
+}
+
+.border-r{
+  border-right: 1px solid #fff;
+}
+
+.header-first-section{
+  min-width: 375px;
+  margin-top: 10px;
+  span{
+    padding: 10px;
+
+    position: relative;
+  }
+
+  img{
+    position: absolute;
+    top: 10%;
+    left: 10px;
+  }
+}
+.header-second-section{
+  //min-width: 200px;
+}
+.header-third-section{
+  min-width: 200px;
+  @media only screen and (max-width: 600px){
+    min-width: 200px;
+  }
+  .remind-pass{
+    position: absolute;
+    width: 250px;
+    top: 40px;
+    left: -30px;
+    background: #fff;
+    padding: 10px;
+    border: 3px solid #E5C595;
+    &:before{
+      content: ' ';
+      position: absolute;
+      top: -35px;
+      left: 178px;
+      border: 17px solid transparent;
+      border-bottom: 17px solid #E5C595;
+      display: block;
+      width: 0;
+      height: 0;
+    }
+    &:after{
+      content: ' ';
+      position: absolute;
+      top: -25px;
+      left: 184px;
+      border: 11px solid transparent;
+      border-bottom: 11px solid #fff;
+      display: block;
+      width: 0;
+      height: 0;
+
+    }
+    form{
+
+      input{
+        width: 80%;
+        height: 20px;
+        border: 1px solid #000000;
+        &:last-child{
+          background: none;
+          border: none;
+        }
+      }
+
+    }
+  }
+
+  margin-left: 195px;
+
+  margin-top: 15px;
+
+  span{
+    position: relative;
+    padding: 15px;
+    &.total-price:after {
+      content: "2 items";
+      font-size: 12px;
+      position: absolute;
+      top: 30px;
+      left: 18%;
+
+    }
+  }
+  img{
+    position: absolute;
+    top: -33%;
+    left: -11%;
+    @media only screen and (max-width: 600px){
+      left: -10%;
+    }
+  }
+
+}
+.radio-form-catalog{
+  form{
+    p{
+
+      height: 30px;
+      margin: 0;
+    }
+    label{
+      width: 200px;
+
+    }
+
+  }
+
+}
