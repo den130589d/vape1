@@ -6,12 +6,14 @@
     width: 80%;
   }
 
-
+  .padding-top38{
+    padding-top: 38px;
+  }
 
 
   .page-header{
 
-    padding-top: 38px;
+
     min-width: 600px;
     @media only screen and (min-width: 992px){
       height: 100px;
@@ -191,11 +193,11 @@
   @media only screen and (max-width: 600px){
     min-width: 200px;
   }
-  .active-cart {
+  .active {
     position: absolute;
-    width: 300px;
-    top: 40px;
-    left: -200px;
+
+
+
     background: #fff;
     padding: 10px;
     border: 3px solid #E5C595;
@@ -222,6 +224,48 @@
       width: 0;
       height: 0;
     }
+    &-cart{
+      left: -200px;
+      top: 40px;
+      width: 300px;
+
+    }
+    &-search{
+      left: -294px;
+      top: 50px;
+      width: 400px;
+      padding-top: 44px;
+      &:before {
+        content: ' ';
+        position: absolute;
+        top: -35px;
+        left: 28px;
+        border: 17px solid transparent;
+        border-bottom: 17px solid #E5C595;
+        display: block;
+        width: 0;
+        height: 0;
+      }
+      &:after {
+        content: ' ';
+        position: absolute;
+        top: -25px;
+        left: 34px;
+        border: 11px solid transparent;
+        border-bottom: 11px solid #fff;
+        display: block;
+        width: 0;
+        height: 0;
+      }
+      .btn-active-search-buy{
+        width: 100px;
+        height: 40px;
+        position: relative;
+        top: -50px;
+        left: 70%;
+        border: 1px solid black;
+      }
+    }
     img{
       position: static;
       width: 20px;
@@ -229,16 +273,36 @@
     img.product{
       width: 75px;
     }
-    div.left{
-      width: 60px;
+    img.close-active-cart{
+      transform: translateY(-220%);
+    }
+    div.active-cart-name{
+
+      margin-left: 30%;
+      padding-left: 10px;
       text-align: left;
       border-left: 1px solid #E5C595;
     }
     div.btn-active-cart{
-      width: 80px;
-      height: 30px;
+      cursor: pointer;
+      position: relative;
+      width: 100px;
+      height: 50px;
       border: 1px solid black;
       display: inline-block;
+      &-first{
+        left: 57%;
+        top: 49px;
+      }
+      &-second{
+        left: 7%;
+        top: -1px;
+      }
+    }
+    .total-price{
+      width: 40%;
+
+
     }
   }
   .remind-pass{
@@ -295,7 +359,7 @@
 
   span{
     position: relative;
-    padding: 15px;
+
     &.total-price:after {
       content: "2 items";
       font-size: 12px;

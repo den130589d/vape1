@@ -29,6 +29,26 @@
                         <a href=""><span class="border-r white-text total-price ">52.70 $</span></a>
                         <a href=""><span class="white-text fs15">Кабинет</span></a>
                         <a href=""><img src="../images/cart-header.png" alt=""></a>
+                        <div class="active active-cart hide-on-med-and-down">
+                            <div>
+                                <a href=""><img src="../images/catalog1.png" alt="" class="product left"></a>
+                                <div class="active-cart-name">
+                                    <a href=""><span>52.70$</span></a><br>
+                                    <a href=""><span>Найменование</span></a><br>
+                                    <a href=""><span>Количество</span></a>
+                                    <a href=""><img src="../images/close.png" alt="" class="close-active-cart right"></a>
+                                </div>
+
+                            </div>
+                            <div class="total-price right ">
+                                <span>Итого</span>
+                                <span>52.52</span>
+                            </div>
+                            <div class="btn-active-cart btn-active-cart-first center-align"><span>Оформить заказ</span></div>
+
+                            <div class="btn-active-cart btn-active-cart-second center-align"><span>В корзину</span></div>
+
+                        </div>
 
                     </li>
                 </ul>
@@ -47,8 +67,8 @@
                     <li class="col s2 white-text">Фильтр</li>
                     <li class="col s4 ">
                         <div class="filtr-header-mobile">
-                        <div class="filter-items second-filter-item"></div>
-                        <div class="filter-items first-filter-item"></div>
+                            <div class="filter-items second-filter-item"></div>
+                            <div class="filter-items first-filter-item"></div>
                         </div>
 
                     </li>
@@ -66,13 +86,13 @@
                                 <input name="group1" type="radio" id="test3"  />
                                 <label for="test3">Starter kids</label>
                             </p>
-                            </form>
+                        </form>
                     </li>
 
                 </ul>
             </li>
-    </ul>
-</div>
+        </ul>
+    </div>
     <div class="page-main">
         <div class="catalog-wrap">
             <!--#insert file="includes/-catalog.html"-->
@@ -81,65 +101,65 @@
             <!--#insert file="includes/-catalog.html"-->
         </div>
 
-</div>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.js"></script>
-<script type="text/javascript" src="js/fullHeight.js"></script>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/fullHeight.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
 
 
-<script>
-    // Initialize collapse button
-    $('.button-collapse').sideNav('show'
-    );
+    <script>
+        // Initialize collapse button
+        $('.button-collapse').sideNav('show'
+        );
 
-    //Initialize slick slider
-    $(document).ready(function(){
-        $('.catalog-wrap-content').slick({
-            dots: false,
-            infinite: true,
-            speed: 1000,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            arrows:true,
-            prevArrow: '<div class="slick-btn-wrap prev"><span class="slick-btn"></span></div>',
-            nextArrow: '<div class="slick-btn-wrap next"><span class="slick-btn"></span></div>',
-            responsive: [
-                {
-                    breakpoint: 1300,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: false,
-                        dots: true
+        //Initialize slick slider
+        $(document).ready(function(){
+            $('.catalog-wrap-content').slick({
+                dots: false,
+                infinite: true,
+                speed: 1000,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                arrows:true,
+                prevArrow: '<div class="slick-btn-wrap prev"><span class="slick-btn"></span></div>',
+                nextArrow: '<div class="slick-btn-wrap next"><span class="slick-btn"></span></div>',
+                responsive: [
+                    {
+                        breakpoint: 1300,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: false,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
                     }
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-    });
-    });
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
 
 
-</script>
+    </script>
 </body>
 </html>

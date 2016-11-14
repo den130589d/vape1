@@ -13,7 +13,7 @@
 <div class="section-one">
     <div class="page-header valign-wrapper">
         <ul class="row center-align">
-            <li class="col l4 left header-first-section hide-on-med-and-down">
+            <li class="col l4 left header-first-section hide-on-med-and-down valign">
                 <a href="#"><span class="border-r white-text fs20">Доставка и оплата</span></a>
                 <a href="#"><span class="white-text fs15">В магазин</span></a>
                 <a href=""><span>
@@ -23,20 +23,12 @@
                 </span></a>
             </li>
 
-            <li class="col l2 m3 pull-m7 pull-s7 header-third-section right">
+            <li class="col l2 m3 pull-m7 pull-s7 header-third-section right valign">
                 <a href=""><span class="border-r white-text total-price ">52.70 $</span></a>
                 <a href=""><span class="white-text fs15">Кабинет</span></a>
                 <a href=""><img src="../images/cart-header.png" alt=""></a>
-                <div class="center-align remind-pass hide-on-med-and-down">
-                    <form action="">
-                        <label for="insertMail" >E-mail</label><br>
-                        <input id="insertMail" type="email">
-                        <label for="remindPass">Вспомнили?</label><br>
-                        <input id="remindPass" type="submit" value="Напомнить">
-                    </form>
-                </div>
             </li>
-            <li class="col l2 m3 s3 pull-l1 push-m2 push-s6 header-second-section"><div class="nav-wrapper ">
+            <li class="col l2 m3 s3 push-m3 push-s6 header-second-section valign"><div class="nav-wrapper ">
                 <form>
                     <div class="input-field ">
                         <input id="search" type="search" required class="search-header-input">
@@ -53,14 +45,6 @@
                             <a href=""><span>Девайсы</span></a><br>
                             <a href=""><span>Смеси</span></a><br>
                             <a href=""><span>Аксесуары</span></a><br>
-                            <div class="center-align remind-pass hide-on-med-and-down">
-                                <form action="">
-                                    <label for="insertMail" >E-mail</label><br>
-                                    <input id="insertMail" type="email">
-                                    <label for="remindPass">Вспомнили?</label><br>
-                                    <input id="remindPass" type="submit" value="Напомнить">
-                                </form>
-                            </div>
                         </div>
 
                     </li>
@@ -80,7 +64,7 @@
     </div>
     <div class="page-main valign-wrapper">
         <div class="content valign">
-            <!--#insert file="includes/-delivery.html"-->
+            <!--#insert file="includes/-cart.html"-->
         </div>
     </div>
 </div>
@@ -90,13 +74,15 @@
 
 <script>
     // Initialize collapse button
-    $('.button-collapse').sideNav('show'
+    $('.button-collapse').sideNav({
+                menuWidth: 300, // Default is 240
+                edge: 'left', // Choose the horizontal origin
+                closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                draggable: true // Choose whether you can drag to open on touch screens
+            }
     );
 
     $('.side-nav, .section-one').fullHeight();
-
-
-
 
 </script>
 </body>
